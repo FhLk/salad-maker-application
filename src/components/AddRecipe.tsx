@@ -5,12 +5,7 @@ interface RecipesProps {
   recipes: ingredientData[]
 }
 
-interface RecipeData{
-  id : string,
-  name: string,
-  ingredients: ingredientData[],
-  calories: number
-}
+
 
 const Recipes: FC<RecipesProps> = ({ recipes }) => {
 
