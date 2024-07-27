@@ -1,7 +1,9 @@
-export default function ingredientPage(){
-    return (
-        <main className="">
-          <h1>Ingredient Page</h1>
-        </main>
-      );
+import ListIngredient from "@/components/ListIngredient";
+
+export default function IngredientPage() {
+  return (
+    <div className="mx-auto">
+      <ListIngredient/>
+    </div>
+  );
 }
