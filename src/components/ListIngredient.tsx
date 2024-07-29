@@ -2,25 +2,34 @@
 import { useState, useEffect } from "react";
 import React, { FC } from 'react';
 import Recipes from "./AddRecipe";
-export interface ingredientData {
+
+export interface ingredients {
   id: string,
   ingredient: string,
   category: string,
-  calories: number
+  calories: number,
+  count: number,
 }
 
 const List : FC = ()=> {
-  const [data, setData] = useState<ingredientData[]>([]);
-  const [ingredients, setIngredients] = useState<ingredientData[]>([])
+  const [ingredients, setIngredients] = useState<ingredients[]>([])
+  const [ingredientsAdd, setIngredientsAdd] = useState<ingredients[]>([])
+  const [ingredientAdd, setIngredientAdd] = useState<ingredients>()
+  const [totalCalories, setTotalCalories] = useState<number>(0)
 
+  //Fetch API
   useEffect(() => {
 
     const getAllIngredients = async () => {
       try {
         const respose = await fetch("http://localhost:8000/ingredients/")
-        const jsonData = await respose.json();
-        setData(jsonData);
-
+        if(respose.status === 200){
+          const jsonData = await respose.json();
+          for (const i in jsonData) {
+            jsonData[i].count = 0
+          }
+          setIngredients(jsonData)
+        }
       } catch (error) {
         console.error(error);
       }
@@ -28,14 +37,33 @@ const List : FC = ()=> {
     getAllIngredients()
   }, [])
 
-  const selectIngredient = async (ingredient : ingredientData) =>{
-    setIngredients([...ingredients,ingredient])
-    console.log(ingredients);
+  const increaseIngredient = (ingredient: ingredients) => {
+    setIngredientAdd({...ingredient,count:++ingredient.count})
+    if(!ingredientsAdd.includes(ingredient)){
+      setIngredientsAdd([...ingredientsAdd,ingredient])
+    }
+  }
+  
+  useEffect(() => {
+    calculateCalories()
+  }, [ingredientAdd]);
+
+  const decreaseIngredient = (ingredient: ingredients) => {
+    if(ingredient.count > 0){
+      setIngredientAdd({...ingredient,count:--ingredient.count})
+    }
+    
+    if(ingredient.count === 0){
+      if(ingredientsAdd.length !== 0){
+        ingredientsAdd.splice(ingredientsAdd.indexOf(ingredient),1)
+        setIngredientsAdd([...ingredientsAdd])   
+      }
+    }
   }
 
-  const removeIngredients = ()=>{
-    setIngredients([])
-  }
+  const calculateCalories = () => {
+    setTotalCalories(ingredientsAdd.reduce((acc, ingredient) => acc + (ingredient.count * ingredient.calories), 0));
+  };
 
   return (
     <div>
@@ -46,16 +74,18 @@ const List : FC = ()=> {
         <button className="p-3 bg-sky-300 rounded-lg text-center">Dressing</button>
       </div>
         <div className="grid grid-cols-4 gap-4">
-        {data.map((item,i) => (
-          <div key={i} className="bg-orange-100" onClick={()=>selectIngredient(item)}>
+        {ingredients.map((item,i) => (
+          <div key={i} className="bg-orange-100">
             <p>{item.ingredient}</p>
             <p>{item.category}</p>
             <p>{item.calories}</p>
+            <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => increaseIngredient(item)}>Increase</button>
+            <p>{item.count}</p>
+            <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => decreaseIngredient(item)}>Decrease</button>
           </div>
         ))}
         </div>
-        <Recipes recipes={ingredients} />
-        <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={removeIngredients}>Clear Ingredients</button>
+        <Recipes recipes={ingredientsAdd} totalCalories={totalCalories} />
     </div>
   );
 }

@@ -1,161 +1,161 @@
 {
   "ingredients": [
     {
-      "id": 0,
+      "id": "0",
       "ingredient": "green leaf lettuce",
       "category": "vegetable",
       "image": null,
       "calories": 8
     },
     {
-      "id": 1,
+      "id": "1",
       "ingredient": "Bok choy",
       "category": "vegetable",
       "image": null,
       "calories": 7
     },
     {
-      "id": 2,
+      "id": "2",
       "ingredient": "Kale",
       "category": "vegetable",
       "image": null,
       "calories": 10
     },
     {
-      "id": 3,
+      "id": "3",
       "ingredient": "red cabbage",
       "category": "vegetable",
       "image": null,
       "calories": 10
     },
     {
-      "id": 4,
+      "id": "4",
       "ingredient": "carrots",
       "category": "vegetable",
       "image": null,
       "calories": 12
     },
     {
-      "id": 5,
+      "id": "5",
       "ingredient": "avocado",
       "category": "fruit",
       "image": null,
       "calories": 120
     },
     {
-      "id": 6,
+      "id": "6",
       "ingredient": "Tomato",
       "category": "fruit",
       "image": null,
       "calories": 18
     },
     {
-      "id": 7,
+      "id": "7",
       "ingredient": "pineapple",
       "category": "fruit",
       "image": null,
       "calories": 25
     },
     {
-      "id": 8,
+      "id": "8",
       "ingredient": "mix berries",
       "category": "fruit",
       "image": null,
       "calories": 28
     },
     {
-      "id": 9,
+      "id": "9",
       "ingredient": "Corn",
       "category": "fruit",
       "image": null,
       "calories": 43
     },
     {
-      "id": 10,
+      "id": "10",
       "ingredient": "Grilled Shrimp",
       "category": "protein",
       "image": null,
       "calories": 98
     },
     {
-      "id": 11,
+      "id": "11",
       "ingredient": "Grilled Chicken Breast",
       "category": "protein",
       "image": null,
       "calories": 165
     },
     {
-      "id": 12,
+      "id": "12",
       "ingredient": "Bacon",
       "category": "protein",
       "image": null,
       "calories": 108
     },
     {
-      "id": 13,
+      "id": "13",
       "ingredient": "Smoked Salmon",
       "category": "protein",
       "image": null,
       "calories": 58
     },
     {
-      "id": 14,
+      "id": "14",
       "ingredient": "Grilled Beef",
       "category": "protein",
       "image": null,
       "calories": 250
     },
     {
-      "id": 15,
+      "id": "15",
       "ingredient": "Crouton",
       "category": "dressing",
       "image": null,
       "calories": 81
     },
     {
-      "id": 16,
+      "id": "16",
       "ingredient": "Barley",
       "category": "dressing",
       "image": null,
       "calories": 100
     },
     {
-      "id": 17,
+      "id": "17",
       "ingredient": "Cashew Nut",
       "category": "dressing",
       "image": null,
       "calories": 110
     },
     {
-      "id": 18,
+      "id": "18",
       "ingredient": "Cream Dressing",
       "category": "dressing",
       "image": null,
       "calories": 60
     },
     {
-      "id": 19,
+      "id": "19",
       "ingredient": "Balsamic Dressing",
       "category": "dressing",
       "image": null,
       "calories": 26
     },
     {
-      "id": 20,
+      "id": "20",
       "ingredient": "Japanese Shoyu",
       "category": "dressing",
       "image": null,
       "calories": 15
     },
     {
-      "id": 21,
+      "id": "21",
       "ingredient": "Seafood Cream Dressing",
       "category": "dressing",
       "image": null,
       "calories": 75
     },
     {
-      "id": 22,
+      "id": "22",
       "ingredient": "Roast Sesame Dressing",
       "category": "dressing",
       "image": null,
@@ -164,249 +164,80 @@
   ],
   "recipes": [
     {
-      "id": "24b4",
-      "name": "Test",
+      "id": "26f0",
+      "name": "GGGG",
       "ingredients": [
         {
-          "id": 8,
-          "ingredient": "mix berries",
-          "category": "fruit",
+          "id": "20",
+          "ingredient": "Japanese Shoyu",
+          "category": "dressing",
           "image": null,
-          "calories": 28
-        },
-        {
-          "id": 9,
-          "ingredient": "Corn",
-          "category": "fruit",
-          "image": null,
-          "calories": 43
-        },
-        {
-          "id": 10,
-          "ingredient": "Grilled Shrimp",
-          "category": "protein",
-          "image": null,
-          "calories": 98
-        },
-        {
-          "id": 6,
-          "ingredient": "Tomato",
-          "category": "fruit",
-          "image": null,
-          "calories": 18
-        },
-        {
-          "id": 11,
-          "ingredient": "Grilled Chicken Breast",
-          "category": "protein",
-          "image": null,
-          "calories": 165
-        },
-        {
-          "id": 7,
-          "ingredient": "pineapple",
-          "category": "fruit",
-          "image": null,
-          "calories": 25
+          "calories": 15,
+          "count": 1
         }
       ],
-      "calories": 0
+      "calories": 15
     },
     {
-      "id": "057b",
-      "name": "Test",
+      "id": "0fa8",
+      "name": "BBBB",
       "ingredients": [
         {
-          "id": 8,
-          "ingredient": "mix berries",
-          "category": "fruit",
+          "id": "16",
+          "ingredient": "Barley",
+          "category": "dressing",
           "image": null,
-          "calories": 28
-        },
-        {
-          "id": 9,
-          "ingredient": "Corn",
-          "category": "fruit",
-          "image": null,
-          "calories": 43
-        },
-        {
-          "id": 10,
-          "ingredient": "Grilled Shrimp",
-          "category": "protein",
-          "image": null,
-          "calories": 98
-        },
-        {
-          "id": 6,
-          "ingredient": "Tomato",
-          "category": "fruit",
-          "image": null,
-          "calories": 18
-        },
-        {
-          "id": 11,
-          "ingredient": "Grilled Chicken Breast",
-          "category": "protein",
-          "image": null,
-          "calories": 165
-        },
-        {
-          "id": 7,
-          "ingredient": "pineapple",
-          "category": "fruit",
-          "image": null,
-          "calories": 25
+          "calories": 100,
+          "count": 7
         }
       ],
-      "calories": 0
+      "calories": 700
     },
     {
-      "id": "ddbc",
-      "name": "Test",
+      "id": "907b",
+      "name": "New Recipe 1",
       "ingredients": [
         {
-          "id": 8,
-          "ingredient": "mix berries",
-          "category": "fruit",
+          "id": "20",
+          "ingredient": "Japanese Shoyu",
+          "category": "dressing",
           "image": null,
-          "calories": 28
+          "calories": 15,
+          "count": 7
         },
         {
-          "id": 9,
-          "ingredient": "Corn",
-          "category": "fruit",
+          "id": "21",
+          "ingredient": "Seafood Cream Dressing",
+          "category": "dressing",
           "image": null,
-          "calories": 43
+          "calories": 75,
+          "count": 3
         },
         {
-          "id": 10,
-          "ingredient": "Grilled Shrimp",
+          "id": "12",
+          "ingredient": "Bacon",
           "category": "protein",
           "image": null,
-          "calories": 98
-        },
-        {
-          "id": 6,
-          "ingredient": "Tomato",
-          "category": "fruit",
-          "image": null,
-          "calories": 18
-        },
-        {
-          "id": 11,
-          "ingredient": "Grilled Chicken Breast",
-          "category": "protein",
-          "image": null,
-          "calories": 165
-        },
-        {
-          "id": 7,
-          "ingredient": "pineapple",
-          "category": "fruit",
-          "image": null,
-          "calories": 25
+          "calories": 108,
+          "count": 4
         }
       ],
-      "calories": 0
+      "calories": 762
     },
     {
-      "id": "c40e",
-      "name": "Test",
+      "id": "8b1b",
+      "name": "Test 1",
       "ingredients": [
         {
-          "id": 8,
-          "ingredient": "mix berries",
-          "category": "fruit",
+          "id": "20",
+          "ingredient": "Japanese Shoyu",
+          "category": "dressing",
           "image": null,
-          "calories": 28
-        },
-        {
-          "id": 9,
-          "ingredient": "Corn",
-          "category": "fruit",
-          "image": null,
-          "calories": 43
-        },
-        {
-          "id": 10,
-          "ingredient": "Grilled Shrimp",
-          "category": "protein",
-          "image": null,
-          "calories": 98
-        },
-        {
-          "id": 6,
-          "ingredient": "Tomato",
-          "category": "fruit",
-          "image": null,
-          "calories": 18
-        },
-        {
-          "id": 11,
-          "ingredient": "Grilled Chicken Breast",
-          "category": "protein",
-          "image": null,
-          "calories": 165
-        },
-        {
-          "id": 7,
-          "ingredient": "pineapple",
-          "category": "fruit",
-          "image": null,
-          "calories": 25
+          "calories": 15,
+          "count": 7
         }
       ],
-      "calories": 0
-    },
-    {
-      "id": "2362",
-      "name": "Test",
-      "ingredients": [
-        {
-          "id": 8,
-          "ingredient": "mix berries",
-          "category": "fruit",
-          "image": null,
-          "calories": 28
-        },
-        {
-          "id": 9,
-          "ingredient": "Corn",
-          "category": "fruit",
-          "image": null,
-          "calories": 43
-        },
-        {
-          "id": 10,
-          "ingredient": "Grilled Shrimp",
-          "category": "protein",
-          "image": null,
-          "calories": 98
-        },
-        {
-          "id": 6,
-          "ingredient": "Tomato",
-          "category": "fruit",
-          "image": null,
-          "calories": 18
-        },
-        {
-          "id": 11,
-          "ingredient": "Grilled Chicken Breast",
-          "category": "protein",
-          "image": null,
-          "calories": 165
-        },
-        {
-          "id": 7,
-          "ingredient": "pineapple",
-          "category": "fruit",
-          "image": null,
-          "calories": 25
-        }
-      ],
-      "calories": 0
+      "calories": 105
     }
   ]
 }

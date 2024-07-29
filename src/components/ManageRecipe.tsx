@@ -24,7 +24,7 @@ const DelRecipe: FC<RecipeID> = ({ recipeId, onDelRecipe }) => {
     return (
         <div className='flex'>
             <button className="p-3 bg-sky-300 rounded-lg text-center">
-                <Link href={`/edit/${recipeId}`}>Edit Recipe</Link>
+                <Link href={`/recipe/edit/${recipeId}`}>Edit Recipe</Link>
             </button>
             <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => removeRecipe(recipeId)}>
                 Delete

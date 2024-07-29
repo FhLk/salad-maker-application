@@ -1,12 +1,12 @@
 "use client"
 import { useState, useEffect } from "react";
 import React, { FC } from 'react';
-import { ingredientData } from "./ListIngredient";
+import { ingredients } from "./ListIngredient";
 import ManageRecipe from "./ManageRecipe";
 interface RecipeData {
     id: string,
     name: string,
-    ingredients: ingredientData[],
+    ingredients: ingredients[],
     calories: number
 }
 
