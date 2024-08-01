@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import { ingredients } from "./ListIngredient";
 import ManageRecipe from "./ManageRecipe";
 import Swal from "sweetalert2";
-interface RecipeData {
+export interface RecipeData {
     id: string,
     name: string,
     ingredients: ingredients[],

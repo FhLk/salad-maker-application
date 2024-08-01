@@ -4,13 +4,8 @@ import React, { FC, useEffect, useState } from 'react'
 import { ingredients } from './ListIngredient';
 import Swal from 'sweetalert2';
 import { permanentRedirect, redirect } from 'next/navigation';
+import { RecipeData } from './ListRecipe';
 
-interface RecipeData {
-  id: string,
-  name: string,
-  ingredients: ingredients[],
-  calories: number
-}
 
 const EditRecipe: FC<{ params: string }> = ({ params }) => {
   const [recipeData, setRecipeData] = useState<RecipeData>({ id: "", name: "", ingredients: [], calories: 0 });
