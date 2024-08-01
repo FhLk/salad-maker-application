@@ -1,12 +1,12 @@
 # Salad Maker Application
 
 ## Introduction
-แอปพลิเคชัน Salad Maker ช่วยให้คุณสร้างสูตรสลัดที่อร่อยและมีประโยชน์ได้ง่ายๆ เพียงไม่กี่คลิก เลือกวัตถุดิบที่คุณชอบ และแอปจะคำนวณแคลอรี่ให้โดยอัตโนมัติ
+แอปพลิเคชัน Salad Maker ช่วยให้คุณสร้างสูตรสลัดที่สะดวกและรวดเร็วได้ง่าย ๆ สามารถเลือกวัตถุดิบที่ต้องการ และจะมีการคำนวณแคลอรี่ให้โดยอัตโนมัติ
 
 ## เทคโนโลยีที่ใช้
-* **Next.js:** Framework สำหรับสร้างเว็บแอปพลิเคชัน React แบบ Server-side rendering
-* **Tailwind CSS:** Utility-first CSS framework สำหรับสร้าง UI ได้อย่างรวดเร็ว
-* **SweetAlert2:** Library สำหรับสร้าง alert และ dialog ที่สวยงาม
+* **Next.js:** Framework สำหรับสร้างเว็บแอปพลิเคชัน React
+* **Tailwind CSS:** Utility-first CSS framework สำหรับสร้าง UI
+* **SweetAlert2:** Library สำหรับสร้าง alert และ dialog
 * **json-server:** สำหรับสร้าง REST API แบบง่ายๆ สำหรับการพัฒนา
 
 ## การติดตั้งและใช้งาน
