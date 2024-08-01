@@ -69,10 +69,10 @@ const List : FC = ()=> {
     <div className="space-y-5">
       <h1 className="font-semibold text-lg">Select Category</h1>
       <div className="flex justify-start space-x-10">
-        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[160px] w-[160px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Vegetables</button>
-        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[160px] w-[160px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Fruit</button>
-        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[160px] w-[160px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Protein</button>
-        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[160px] w-[160px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Dressing</button>
+        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[100px] w-[120px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Vegetables</button>
+        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[100px] w-[120px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Fruit</button>
+        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[100px] w-[120px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Protein</button>
+        <button className="p-3 bg-white rounded-[16px] text-[#A098AE] text-center h-[100px] w-[120px] px-[24px] py-[32px] hover:bg-slate-300 hover:text-black">Dressing</button>
       </div>
       <h1 className="font-semibold text-lg">Choose your ingredients to make a salad</h1>
         <div className="grid grid-cols-4 gap-4">
