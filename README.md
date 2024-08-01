@@ -30,12 +30,12 @@
 * **Delete Recipe:** ลบสูตรอาหาร
 
 ## API Endpoints
-* **GET /ingredients:** ดึงข้อมูลวัตถุดิบทั้งหมด
-* **GET /recipes:** ดึงข้อมูลสูตรอาหารทั้งหมด
-* **GET /recipes/[id]:** ดึงข้อมูลสูตรอาหารตาม ID
-* **POST /recipes/:** สร้างสูตรอาหารใหม่
-* **PATCH /recipes/[id]:** แก้ไขสูตรอาหาร
-* **DELETE /recipes/[id]:** ลบสูตรอาหาร
+* **GET /ingredients :** ดึงข้อมูลวัตถุดิบทั้งหมด
+* **GET /recipes :** ดึงข้อมูลสูตรอาหารทั้งหมด
+* **GET /recipes/[id] :** ดึงข้อมูลสูตรอาหารตาม ID
+* **POST /recipes/ :** สร้างสูตรอาหารใหม่
+* **PATCH /recipes/[id] :** แก้ไขสูตรอาหาร
+* **DELETE /recipes/[id] :** ลบสูตรอาหาร
 
 ## โครงสร้างข้อมูล
 * **ingredients:**
