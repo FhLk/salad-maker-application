@@ -1,12 +1,11 @@
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import IngredientPage from "./ingredient/page";
 
 export default function Home() {
   return (
-    <main className="">
-      <ul>
-        <li><Link href="/ingredient">Go to Ingredient Page</Link></li>
-        <li><Link href="/recipe">Go to Recipe Page</Link></li>
-      </ul>
+    <main className="min-h-screen flex w-full">
+      <IngredientPage/>
     </main>
   );
 }

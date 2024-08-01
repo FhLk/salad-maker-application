@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.swal2-cancel {
+  color: black;
+}
+
+body{
+  background-color: #F5F5F5;
+}

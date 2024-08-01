@@ -164,36 +164,6 @@
   ],
   "recipes": [
     {
-      "id": "26f0",
-      "name": "GGGG",
-      "ingredients": [
-        {
-          "id": "20",
-          "ingredient": "Japanese Shoyu",
-          "category": "dressing",
-          "image": null,
-          "calories": 15,
-          "count": 1
-        }
-      ],
-      "calories": 15
-    },
-    {
-      "id": "0fa8",
-      "name": "BBBB",
-      "ingredients": [
-        {
-          "id": "16",
-          "ingredient": "Barley",
-          "category": "dressing",
-          "image": null,
-          "calories": 100,
-          "count": 7
-        }
-      ],
-      "calories": 700
-    },
-    {
       "id": "907b",
       "name": "New Recipe 1",
       "ingredients": [
@@ -203,26 +173,10 @@
           "category": "dressing",
           "image": null,
           "calories": 15,
-          "count": 7
-        },
-        {
-          "id": "21",
-          "ingredient": "Seafood Cream Dressing",
-          "category": "dressing",
-          "image": null,
-          "calories": 75,
           "count": 3
-        },
-        {
-          "id": "12",
-          "ingredient": "Bacon",
-          "category": "protein",
-          "image": null,
-          "calories": 108,
-          "count": 4
         }
       ],
-      "calories": 762
+      "calories": 45
     },
     {
       "id": "8b1b",
@@ -238,6 +192,37 @@
         }
       ],
       "calories": 105
+    },
+    {
+      "id": "de7b",
+      "name": "New Recipe 2",
+      "ingredients": [
+        {
+          "id": "17",
+          "ingredient": "Cashew Nut",
+          "category": "dressing",
+          "image": null,
+          "calories": 110,
+          "count": 3
+        },
+        {
+          "id": "18",
+          "ingredient": "Cream Dressing",
+          "category": "dressing",
+          "image": null,
+          "calories": 60,
+          "count": 2
+        },
+        {
+          "id": "21",
+          "ingredient": "Seafood Cream Dressing",
+          "category": "dressing",
+          "image": null,
+          "calories": 75,
+          "count": 3
+        }
+      ],
+      "calories": 675
     }
   ]
 }

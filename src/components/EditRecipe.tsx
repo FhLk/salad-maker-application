@@ -74,26 +74,31 @@ const EditRecipe: FC<{ params: string }> = ({ params }) => {
   }
 
   return (
-    <div>
-      <p>{recipeData.id}</p>
-      <p>{recipeData.name}</p>
-      <p>{totalCalories}</p>
-      <div className='grid grid-cols-4 gap-4'>
+    <div className='bg-white p-[20px] rounded-[16px]'>
+      <h2 className='text-xl font-bold'>Your ingredients to make a salad Recipe</h2>
+      <div className='flex flex-col gap-4 bg-white py-5'>
         {ingredientsEdit.map((item, i) => (
-          <div key={i} className="bg-orange-100">
-            <p>{item.ingredient}</p>
-            <p>{item.category}</p>
-            <p>{item.calories}</p>
-            <div className='flex'>
-            <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => decreaseIngredient(item)}>Decrease</button>
-            <p>{item.count}</p>
-            <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => increaseIngredient(item)}>Increase</button>
+          <div key={i} className="flex justify-between py-1">
+            <div className='flex space-x-7'>
+              <img className='flex-none' src='/img-placheholder.svg' height="80px" width="80px"></img>
+              <div className='space-y-3'>
+                <p className='font-bold'>{item.ingredient}</p>
+                <p className='flex gap-3 items-center text-[15px] text-[#A098AE]'>
+                  <button className="p-3 bg-[#F8B602] h-5 w-5 rounded-full flex justify-center items-center font-bold text-black" onClick={() => decreaseIngredient(item)}> - </button>
+                    x{item.count} 
+                  <button className="p-3 bg-[#F8B602] h-5 w-5 rounded-full flex justify-center items-center font-bold text-black" onClick={() => increaseIngredient(item)}> + </button>
+                </p>
+                <button className="text-[#FE0000] underline" onClick={() => deleteIngredient(item)}>Delete</button>
+              </div>
             </div>
-            <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => deleteIngredient(item)}>Delete</button>
+            <div className='flex items-center font-bold'>
+              <p>x{item.calories * item.count} <span className=" text-[#F8B602]">Cal</span></p>
+            </div>
           </div>
         ))}
       </div>
-      <button className="p-3 bg-sky-300 rounded-lg text-center" onClick={() => updateRecipe()}>Update Recipe</button>
+      <p className='flex justify-between text-2xl'>Total Calorie <span className=''>{totalCalories} <span className=" text-[#F8B602] font-bold">Cal</span></span></p>
+      <button className="p-3 bg-[#F8B602] w-full my-3 text-white font-bold rounded-lg text-center" onClick={() => updateRecipe()}>Update Recipe</button>
     </div>
   )
 }
